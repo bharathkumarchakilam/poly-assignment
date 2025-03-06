@@ -1,0 +1,14 @@
+﻿Polymorphism improves code maintainability and extensibility by allowing different classes to be used interchangeably through a common interface, reducing code duplication and making it easier to add new functionality without modifying existing code.
+
+Scenario: Payment Processing System
+Imagine you are building a payment processing system that supports multiple payment methods like Credit Card, PayPal, and Bank Transfer.
+
+Without Polymorphism:
+
+You might write separate if-else or switch statements everywhere to check the payment type and execute the corresponding logic.
+Adding a new payment method (e.g., Cryptocurrency) would require modifying multiple parts of the code, increasing the risk of errors.
+With Polymorphism:
+
+You define a common Payment interface (or base class) with a ProcessPayment() method.
+Each payment method (Credit Card, PayPal, etc.) implements this method differently.
+The main system works with the Payment interface rather than specific implementations.
